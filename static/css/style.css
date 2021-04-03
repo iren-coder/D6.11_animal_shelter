@@ -1,0 +1,57 @@
+.navbar {
+    display: flex;
+    box-sizing: border-box;
+    align-items: stretch;
+    justify-content: center;
+    margin: 0 auto;
+    min-height: 89px;
+    background-color:#343a40;
+}
+
+.navbar-expand-lg {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    list-style: none;
+    padding: 0;
+    margin-left: 10px;  
+    }
+
+.nav-item {
+color: #220566;
+}
+
+.content {
+    min-height: calc(100vh - 70px);
+}
+
+.pet-card-img {
+    max-height: 200px;
+    min-height: 100px;
+}
+
+.employee-card-img {
+    max-height: 150px;
+    min-height: 100px;
+}
+
+.pet-img {
+    max-height: 200px;
+    min-height: 100px;
+}
+
+.emoloyee-img {
+    max-width: 300px;
+}
+
+.phone{
+    margin-right: 5px;
+    max-height: 15px;
+    min-height: 15px;
+}
+
+.mail{
+    padding-right: 5px;
+    max-height: 15px;
+    min-height: 15px;
+}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="d-flex mt-5 ml-5">
+        <div class="pet-img">
+            <img src='/{{ pet.image }}' class="img-thumbnail" alt="Фото питомца">
+        </div>
+
+        <div class="ml-3 mt-3">
+            <strong>Кличка:</strong> {{ pet.name }} <br>
+            <strong>Порода:</strong> {{ pet.breed }} <br>
+            <strong>Цвет глаз:</strong> {{ pet.eye_color }} <br>
+            <strong>Описание:</strong> {{ pet.description }} <br>
+            <strong>Наличие медицинскиз справок:</strong>
+                {% if pet.certificate == True %}
+                    есть
+                {% else %}
+                    нет
+                {% endif %}<br>
+            <strong>Дата поступления в приют:</strong> {{ pet.date_of_arrival|date:"d.m.y" }} <br>
+            <strong>Пол:</strong>
+                {% if pet.sex == 'F' %}
+                    женский
+                {% else %}
+                    мужской
+                {% endif %}<br>
+        </div>
+    </div>
+{% endblock %}
